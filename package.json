@@ -6,12 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --test scripts/syncDocsAndTest.mjs",
+    "docs:sync": "node scripts/syncDocsAndTest.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "@types/pg": "^8.23.1",
+    "@types/three": "^0.187.0",
     "next": "16.4.6",
+    "pg": "^8.23.1",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "three": "^0.187.0"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "4.3.3",
